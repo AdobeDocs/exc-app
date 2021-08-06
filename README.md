@@ -23,17 +23,19 @@ script.
       - [Metrics](#metrics)
       - [Network](#network)
       - [NPS](#nps)
-      - [OrgSwitcher](#orgswitcher)
       - [Page](#page)
+      - [Permissions](#permissions)
       - [Pulse](#pulse)
+      - [Session](#session)
       - [Settings](#settings)
+      - [Shell](#shell)
       - [TopBar](#topbar)
       - [User](#user)
       - [UserProfile](#userprofile)
     - [Events](#events)
       - [Ready](#ready)
       - [Configuration](#configuration)
-      - [Recieving Updates](#change-event)
+      - [Receiving Updates](#receiving-updates)
       - [History](#history)
   - [Licensing](#licensing)
 
@@ -233,7 +235,7 @@ function setup() {
 ```
 
 #### Receiving Updates
-After promise fulfillment, in order to get updates on the requested data, the solution must listen for specific [change events](#change-event).
+After promise fulfillment, in order to get updates on the requested data, the solution must listen for specific change events.
 
 These change events are emitted from the api that the data is requested from. For example, if a user calls `await shell.get('shellInfo');` they must listen for the change event on `shell.on('change:shellInfo')`. If a user calls `await user.get('imsOrg')` they must listen for the change event on `user.on('change:imsOrg')`. Here is a more detailed example of how the promise api and change events can be used to keep track of specific values from the config:
 
