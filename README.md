@@ -19,6 +19,7 @@ script.
   - [Features](#features)
     - [APIs](#apis)
       - [AppApi](#appApi)
+      - [CapabilityApi](#capabilityApi)
       - [HelpCenter](#helpcenter)
       - [Metrics](#metrics)
       - [Network](#network)
@@ -65,6 +66,10 @@ init(runtime => {
 #### AppApi
 APIs that provide access to certain data types nested inside the app Context.
 [learn more](/docs/modules/appapi.md)
+
+#### CapabilityApi
+API to request capability icons by id (or secondarily by display name).
+[learn more](/docs/modules/capabilityapi.md)
 
 #### HelpCenter
 
