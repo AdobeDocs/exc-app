@@ -8,8 +8,9 @@
 
 ### Modules
 
-* [](modules/reflection-849.md)
+* [](modules/reflection-936.md)
 * [appapi](modules/appapi.md)
+* [capabilityapi](modules/capabilityapi.md)
 * [helpCenter](modules/helpcenter.md)
 * [metrics](modules/metrics.md)
 * [network](modules/network.md)

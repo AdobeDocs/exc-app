@@ -19,16 +19,9 @@
 
 ### config
 
-•  **config**: { subject: string ; type: \"CONTEXTUAL\_FEEDBACK\_SUBMISSION\"  }
+• `Optional` **config**: undefined \| { subject: string ; type: \"CONTEXTUAL\_FEEDBACK\_SUBMISSION\"  }
 
 Configuration for Help Center fields when opened.
-
-#### Type declaration:
-
-Name | Type | Description |
------- | ------ | ------ |
-`subject` | string | String that prepopulates the subject field in the Help center feedback section. |
-`type` | \"CONTEXTUAL\_FEEDBACK\_SUBMISSION\" | Type of feedback. Only CONTEXTUAL_FEEDBACK_SUBMISSION is supported, meaning that the Help Center feedback tab will be opened. |
 
 ___
 
