@@ -32,4 +32,4 @@ ___
 
 ### shellInfo
 
-•  **shellInfo**: Record\<string, any>
+•  **shellInfo**: Record<string, any\>

@@ -13,11 +13,10 @@
 ### Properties
 
 * [auth](network.fetchoptions.md#auth)
-* [excludeSandbox](network.fetchoptions.md#excludesandbox)
-* [excludeSandboxType](network.fetchoptions.md#excludesandboxtype)
 * [maxRetries](network.fetchoptions.md#maxretries)
 * [metadata](network.fetchoptions.md#metadata)
 * [scope](network.fetchoptions.md#scope)
+* [statusCodesToRetry](network.fetchoptions.md#statuscodestoretry)
 * [totalFetchTime](network.fetchoptions.md#totalfetchtime)
 
 ## Properties
@@ -27,22 +26,6 @@
 • `Optional` **auth**: \"Header\" \| \"Body\"
 
 A boolean value indicating whether to add Authentication token, API Key to the request.
-
-___
-
-### excludeSandbox
-
-• `Optional` **excludeSandbox**: undefined \| false \| true
-
-**`deprecated`** excludeSandbox should be replaced with scope
-
-___
-
-### excludeSandboxType
-
-• `Optional` **excludeSandboxType**: undefined \| false \| true
-
-**`deprecated`** excludeSandboxType should be replaced with scope
 
 ___
 
@@ -65,6 +48,15 @@ ___
 • `Optional` **scope**: [FetchScope](../enums/network.fetchscope.md)
 
 Specify the headers to be added to the request
+
+___
+
+### statusCodesToRetry
+
+• `Optional` **statusCodesToRetry**: number[]
+
+HTTP Status Codes which will prompt a retry. If not provided only network failures
+will prompt a retry.
 
 ___
 

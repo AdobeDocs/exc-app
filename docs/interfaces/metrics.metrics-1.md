@@ -33,7 +33,7 @@ Defines metrics APIs.
 
 ### analytics
 
-•  **analytics**: Readonly\<[Analytics](metrics.analytics.md)>
+•  **analytics**: Readonly<[Analytics](metrics.analytics.md)\>
 
 The Analytics APIs are designed to mirror the Omega APIs, enabling an Analtyics record to be
 remotely stored which simulatenously captures additional context provided by the Metrics system
@@ -51,7 +51,7 @@ ___
 
 ### history
 
-•  **history**: Readonly\<[History](metrics.history.md)>
+•  **history**: Readonly<[History](metrics.history.md)\>
 
 The History APIs are designed to mirror browser history management. Calling a Metrics history
 API is recommended either immediately before or after a call to window history, and will record

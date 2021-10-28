@@ -53,6 +53,7 @@ const queryResponse = await query({
 
 ### Interfaces
 
+* [ApolloClientOptions](../interfaces/network.apolloclientoptions.md)
 * [DefaultMetaData](../interfaces/network.defaultmetadata.md)
 * [FetchOptions](../interfaces/network.fetchoptions.md)
 * [GraphQLQuery](../interfaces/network.graphqlquery.md)
@@ -63,9 +64,14 @@ const queryResponse = await query({
 
 * [FetchInit](network.md#fetchinit)
 
+### Variables
+
+* [DEFAULT\_STATUS\_CODES\_TO\_RETRY](network.md#default_status_codes_to_retry)
+
 ### Functions
 
 * [fetch](network.md#fetch)
+* [getApolloClient](network.md#getapolloclient)
 * [query](network.md#query)
 
 ## Type aliases
@@ -83,11 +89,19 @@ also additionally specify the 'auth' parameter to automatically set the Authenti
 `{auth: 'Header', method: 'GET'}` or
 `{method: 'GET'}`
 
+## Variables
+
+### DEFAULT\_STATUS\_CODES\_TO\_RETRY
+
+• `Const` **DEFAULT\_STATUS\_CODES\_TO\_RETRY**: number[] = [429, 502, 503, 504]
+
+Default status codes which imply a transient error and can be retried.
+
 ## Functions
 
 ### fetch
 
-▸ **fetch**(`input`: RequestInfo, `init?`: [FetchInit](network.md#fetchinit)): Promise\<Response>
+▸ **fetch**(`input`: RequestInfo, `init?`: [FetchInit](network.md#fetchinit)): Promise<Response\>
 
 Provides an interface for fetching resources powered by the global 'fetch' API.
 
@@ -116,15 +130,47 @@ Name | Type | Description |
 `input` | RequestInfo | The resource that you wish to fetch. It can either be the URL of the resource you want to fetch or a Request object. |
 `init?` | [FetchInit](network.md#fetchinit) | An object containing any custom settings that you want to apply to the request. |
 
-**Returns:** Promise\<Response>
+**Returns:** Promise<Response\>
 
 The promise for the response to the fetch operation.
 
 ___
 
+### getApolloClient
+
+▸ **getApolloClient**(`options?`: [ApolloClientOptions](../interfaces/network.apolloclientoptions.md)): Promise<{ apolloClient: ApolloClient<InMemoryCache\> ; gql: *typeof* gql  }\>
+
+Provides an interface for querying resources via GraphqQL using ApolloClient
+***Example***
+```typescript
+ const apolloClientModule = await getApolloClient();
+ const apolloClient = apolloClientModule.apolloClient;
+ const gql = apolloClientModule.gql;
+ const result = await apolloClient.query({
+   query: gql`query  user {
+     id
+     name
+   }`,
+   variables : {}
+ });
+ console.log(result.data);
+```
+
+#### Parameters:
+
+Name | Type | Description |
+------ | ------ | ------ |
+`options?` | [ApolloClientOptions](../interfaces/network.apolloclientoptions.md) | Configuration to create ApolloClient instance |
+
+**Returns:** Promise<{ apolloClient: ApolloClient<InMemoryCache\> ; gql: *typeof* gql  }\>
+
+GraphQL query response
+
+___
+
 ### query
 
-▸ **query**(`input`: [QueryRequest](../interfaces/network.queryrequest.md)): Promise\<Response>
+▸ **query**(`input`: [QueryRequest](../interfaces/network.queryrequest.md)): Promise<Response\>
 
 Provides an interface for querying resources via GraphqQL.
 In order to consume query, please make sure the respective query resolver is
@@ -161,6 +207,6 @@ Name | Type | Description |
 ------ | ------ | ------ |
 `input` | [QueryRequest](../interfaces/network.queryrequest.md) | Query request containing desired GQL Query. |
 
-**Returns:** Promise\<Response>
+**Returns:** Promise<Response\>
 
 The promise for the response to the query operation.

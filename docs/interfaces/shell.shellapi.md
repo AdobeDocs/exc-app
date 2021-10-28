@@ -6,7 +6,7 @@
 
 ## Hierarchy
 
-* EventEmitter\<ShellInfoEvent>
+* EventEmitter<ShellInfoEvent\>
 
   ↳ **ShellApi**
 
@@ -26,7 +26,7 @@
 
 ### emit
 
-▸ **emit**\<K>(`type`: K, `event?`: ShellInfoEvent[K]): void
+▸ **emit**<K\>(`type`: K, `event?`: ShellInfoEvent[K]): void
 
 *Inherited from void*
 
@@ -51,7 +51,7 @@ ___
 
 ### off
 
-▸ **off**\<K>(`type`: K, `handler`: (event?: ShellInfoEvent[K]) => void): void
+▸ **off**<K\>(`type`: K, `handler`: (event?: ShellInfoEvent[K]) => void): void
 
 *Inherited from void*
 
@@ -76,7 +76,7 @@ ___
 
 ### on
 
-▸ **on**\<K>(`type`: K, `handler`: (event?: ShellInfoEvent[K]) => void): void
+▸ **on**<K\>(`type`: K, `handler`: (event?: ShellInfoEvent[K]) => void): void
 
 *Inherited from void*
 
@@ -103,7 +103,7 @@ ___
 
 ### get
 
-▸ **get**\<T>(`type`: T): Promise\<ShellInfo[T]>
+▸ **get**<T\>(`type`: T): Promise<ShellInfo[T]\>
 
 Gets the specified type of information about the shell.
 
@@ -119,4 +119,4 @@ Name | Type | Description |
 ------ | ------ | ------ |
 `type` | T | The type of information to get.  |
 
-**Returns:** Promise\<ShellInfo[T]>
+**Returns:** Promise<ShellInfo[T]\>

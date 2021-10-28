@@ -35,7 +35,7 @@ ___
 
 ### sandbox
 
-• `Optional` **sandbox**: Record\<string, any>
+• `Optional` **sandbox**: Record<string, any\>
 
 ___
 

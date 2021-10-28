@@ -27,6 +27,8 @@ Defines page-level APIs available to solutions.
 
 ### Methods
 
+* [afterPrintHandler](page.pageapi.md#afterprinthandler)
+* [beforePrintHandler](page.pageapi.md#beforeprinthandler)
 * [blockNavigation](page.pageapi.md#blocknavigation)
 * [clipboardWrite](page.pageapi.md#clipboardwrite)
 * [done](page.pageapi.md#done)
@@ -35,6 +37,7 @@ Defines page-level APIs available to solutions.
 * [iframeReload](page.pageapi.md#iframereload)
 * [notFound](page.pageapi.md#notfound)
 * [openInNewTab](page.pageapi.md#openinnewtab)
+* [print](page.pageapi.md#print)
 * [setModalQuerySelectors](page.pageapi.md#setmodalqueryselectors)
 * [shellRedirect](page.pageapi.md#shellredirect)
 
@@ -184,6 +187,52 @@ page.unloadPromptMessage = 'Are you sure you want to leave?';
 
 ## Methods
 
+### afterPrintHandler
+
+▸ **afterPrintHandler**(`callback`: [Callback](page.callback.md)): void
+
+A function that listens and handles the afterPrint event.
+
+```typescript
+***Example:***
+page.afterPrintHandler = function () {
+  // Revert temporary CSS changes
+};
+````
+
+#### Parameters:
+
+Name | Type | Description |
+------ | ------ | ------ |
+`callback` | [Callback](page.callback.md) | The function that results in printing.  |
+
+**Returns:** void
+
+___
+
+### beforePrintHandler
+
+▸ **beforePrintHandler**(`callback`: [Callback](page.callback.md)): void
+
+A function that listens and handles the beforePrint event.
+
+```typescript
+***Example:***
+page.beforePrintHandler = function () {
+  // Temporary CSS changes, like unsetting height
+};
+````
+
+#### Parameters:
+
+Name | Type | Description |
+------ | ------ | ------ |
+`callback` | [Callback](page.callback.md) | The function that results in printing.  |
+
+**Returns:** void
+
+___
+
 ### blockNavigation
 
 ▸ **blockNavigation**(`enabled`: boolean, `options?`: [BlockNavigationOptions](page.blocknavigationoptions.md)): void
@@ -309,7 +358,7 @@ ___
 
 ### getModalQuerySelectors
 
-▸ **getModalQuerySelectors**(): Array\<string>
+▸ **getModalQuerySelectors**(): Array<string\>
 
 Get the list of selectors presently being used by modalAutoDetect.
 
@@ -319,7 +368,7 @@ Get the list of selectors presently being used by modalAutoDetect.
 page.getModalQuerySelectors({path: '/abc'});
 ```
 
-**Returns:** Array\<string>
+**Returns:** Array<string\>
 
 The list of selectors presently being used by modalAutoDetect.
 
@@ -388,13 +437,41 @@ Name | Type | Description |
 
 ___
 
+### print
+
+▸ **print**(`callback`: [Callback](page.callback.md)): void
+
+A function to control printing. The callback function should call `window.print()`
+at some point. It's important that the callback not be an arrow function if you
+want the `window` object to be the iframe contents. Feel free to adjust your
+CSS or UI before `window.print()` and reverse those changes afterwards.
+
+```typescript
+***Example:***
+page.print = function () {
+  window.print();
+};
+````
+
+#### Parameters:
+
+Name | Type | Description |
+------ | ------ | ------ |
+`callback` | [Callback](page.callback.md) | The function that results in printing.  |
+
+**Returns:** void
+
+___
+
 ### setModalQuerySelectors
 
-▸ **setModalQuerySelectors**(`selectors`: Array\<string>): void
+▸ **setModalQuerySelectors**(`selectors`: Array<string\>): void
 
 Set the list of selectors presently being used by modalAutoDetect. If set to an empty
 array, the default selectors used by runtime will be used instead. To stop observing changes
-unset modalAutoDetect.
+unset modalAutoDetect. Setting additonal selectors replaces the currently set selectors, use
+page.getModalQuerySelectors and append new selectors to the returned list before resetting
+to modify the existing list of selectors.
 
 ***Example:***
 
@@ -406,7 +483,7 @@ page.setModalQuerySelectors(['.someSpecialCaseModal', '.yourNormalModal']);
 
 Name | Type | Description |
 ------ | ------ | ------ |
-`selectors` | Array\<string> | The list of selectors for modalAutoDetect to use.  |
+`selectors` | Array<string\> | The list of selectors for modalAutoDetect to use.  |
 
 **Returns:** void
 

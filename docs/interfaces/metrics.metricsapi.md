@@ -20,7 +20,7 @@ Defines the metrics API.
 
 ### create
 
-▸ **create**(`name`: string): Readonly\<[Metrics](metrics.metrics-1.md)>
+▸ **create**(`name`: string): Readonly<[Metrics](metrics.metrics-1.md)\>
 
 Creates a metrics instance for the specified component to log entries and events.
 
@@ -30,4 +30,4 @@ Name | Type | Description |
 ------ | ------ | ------ |
 `name` | string | The name of the component.  |
 
-**Returns:** Readonly\<[Metrics](metrics.metrics-1.md)>
+**Returns:** Readonly<[Metrics](metrics.metrics-1.md)\>

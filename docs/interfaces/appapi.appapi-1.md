@@ -18,7 +18,7 @@
 
 ### get
 
-▸ **get**(`appId`: AppId): Promise\<[AppResponse](appapi.appresponse.md)>
+▸ **get**(`appId`: AppId): Promise<[AppResponse](appapi.appresponse.md)\>
 
 API to fetch metadata for one app by appId
 
@@ -28,4 +28,4 @@ Name | Type |
 ------ | ------ |
 `appId` | AppId |
 
-**Returns:** Promise\<[AppResponse](appapi.appresponse.md)>
+**Returns:** Promise<[AppResponse](appapi.appresponse.md)\>

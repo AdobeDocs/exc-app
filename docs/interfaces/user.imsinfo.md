@@ -37,7 +37,7 @@ ___
 
 ### imsProfile
 
-• `Optional` **imsProfile**: Record\<string, any>
+• `Optional` **imsProfile**: Record<string, any\>
 
 ___
 

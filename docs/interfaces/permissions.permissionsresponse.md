@@ -2,7 +2,7 @@
 
 > [Globals](../README.md) / [permissions](../modules/permissions.md) / PermissionsResponse
 
-# Interface: PermissionsResponse\<T>
+# Interface: PermissionsResponse<T\>
 
 The response from the permissions service.
 

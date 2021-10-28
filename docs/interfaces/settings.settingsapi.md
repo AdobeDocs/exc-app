@@ -22,7 +22,7 @@ at an IMS user and/or an IMS org level. An app in unified shell can consume Sett
 
 ### get
 
-▸ **get**\<T>(`params`: [Parameters](settings.parameters.md)\<T>): Promise\<[SettingsResponse](settings.settingsresponse.md)\<T>>
+▸ **get**<T\>(`params`: [Parameters](settings.parameters.md)<T\>): Promise<[SettingsResponse](settings.settingsresponse.md)<T\>\>
 
 Gets settings based on the specified parameters such as groupId
 and settings - keys with default values to fallback.
@@ -37,9 +37,9 @@ Name | Type |
 
 Name | Type | Description |
 ------ | ------ | ------ |
-`params` | [Parameters](settings.parameters.md)\<T> | Parameters used to identify settings to retrieve. |
+`params` | [Parameters](settings.parameters.md)<T\> | Parameters used to identify settings to retrieve. |
 
-**Returns:** Promise\<[SettingsResponse](settings.settingsresponse.md)\<T>>
+**Returns:** Promise<[SettingsResponse](settings.settingsresponse.md)<T\>\>
 
 A promise for the specified settings.
 
@@ -47,7 +47,7 @@ ___
 
 ### set
 
-▸ **set**\<T>(`params`: [Parameters](settings.parameters.md)\<T>): Promise\<[SettingsResponse](settings.settingsresponse.md)\<T>>
+▸ **set**<T\>(`params`: [Parameters](settings.parameters.md)<T\>): Promise<[SettingsResponse](settings.settingsresponse.md)<T\>\>
 
 Creates or updates settings based on the specified parameters such as groupId and settings
 key-value pairs.
@@ -62,8 +62,8 @@ Name | Type |
 
 Name | Type | Description |
 ------ | ------ | ------ |
-`params` | [Parameters](settings.parameters.md)\<T> | Parameters to identify the settings to create or update. |
+`params` | [Parameters](settings.parameters.md)<T\> | Parameters to identify the settings to create or update. |
 
-**Returns:** Promise\<[SettingsResponse](settings.settingsresponse.md)\<T>>
+**Returns:** Promise<[SettingsResponse](settings.settingsresponse.md)<T\>\>
 
 A promise for the operation response.

@@ -6,7 +6,7 @@
 
 ## Hierarchy
 
-* EventEmitter\<UserInfoEvent>
+* EventEmitter<UserInfoEvent\>
 
   ↳ **UserApi**
 
@@ -32,7 +32,7 @@
 
 ### logoutUrl
 
-•  **logoutUrl**: string \| undefined
+• `Optional` **logoutUrl**: [LogoutUrl](../modules/user.md#logouturl)
 
 Optional. When specified this URL will be invoked upon user logging out. This is useful to
 reduce the number of lingering sessions for solutions who have their own sessions server
@@ -50,7 +50,7 @@ If language picker should be opened.
 
 ### emit
 
-▸ **emit**\<K>(`type`: K, `event?`: UserInfoEvent[K]): void
+▸ **emit**<K\>(`type`: K, `event?`: UserInfoEvent[K]): void
 
 *Inherited from void*
 
@@ -75,7 +75,7 @@ ___
 
 ### off
 
-▸ **off**\<K>(`type`: K, `handler`: (event?: UserInfoEvent[K]) => void): void
+▸ **off**<K\>(`type`: K, `handler`: (event?: UserInfoEvent[K]) => void): void
 
 *Inherited from void*
 
@@ -100,7 +100,7 @@ ___
 
 ### on
 
-▸ **on**\<K>(`type`: K, `handler`: (event?: UserInfoEvent[K]) => void): void
+▸ **on**<K\>(`type`: K, `handler`: (event?: UserInfoEvent[K]) => void): void
 
 *Inherited from void*
 
@@ -138,7 +138,7 @@ ___
 
 ### get
 
-▸ **get**\<T>(`type`: T): Promise\<UserInfo[T]>
+▸ **get**<T\>(`type`: T): Promise<UserInfo[T]\>
 
 Gets the specified type of information about an user.
 
@@ -154,4 +154,4 @@ Name | Type | Description |
 ------ | ------ | ------ |
 `type` | T | The type of information to get.  |
 
-**Returns:** Promise\<UserInfo[T]>
+**Returns:** Promise<UserInfo[T]\>

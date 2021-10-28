@@ -2,7 +2,7 @@
 
 > [Globals](../README.md) / [settings](../modules/settings.md) / SettingsResponse
 
-# Interface: SettingsResponse\<T>
+# Interface: SettingsResponse<T\>
 
 The response from the settings service.
 

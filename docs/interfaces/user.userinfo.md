@@ -54,7 +54,7 @@ ___
 
 ### imsProfile
 
-•  **imsProfile**: Record\<string, any>
+•  **imsProfile**: Record<string, any\>
 
 ___
 
@@ -84,7 +84,7 @@ ___
 
 ### sandboxes
 
-•  **sandboxes**: Array\<[Sandbox](user.sandbox.md)>
+•  **sandboxes**: Array<[Sandbox](user.sandbox.md)\>
 
 ___
 

@@ -38,5 +38,6 @@ API for sending pulse notifications.
 ### Interfaces
 
 * [PulseApi](../interfaces/pulse.pulseapi.md)
+* [PulseButtonConfig](../interfaces/pulse.pulsebuttonconfig.md)
 * [PulseNotification](../interfaces/pulse.pulsenotification.md)
 * [PulseResponse](../interfaces/pulse.pulseresponse.md)

@@ -18,7 +18,7 @@
 
 ### get
 
-▸ **get**(`capability`: [CapabilityNames](../enums/capabilityapi.capabilitynames.md) \| [CapabilityIds](../enums/capabilityapi.capabilityids.md)): Promise\<[CapabilityResponse](capabilityapi.capabilityresponse.md)>
+▸ **get**(`capability`: [CapabilityNames](../enums/capabilityapi.capabilitynames.md) \| [CapabilityIds](../enums/capabilityapi.capabilityids.md)): Promise<[CapabilityResponse](capabilityapi.capabilityresponse.md)\>
 
 Gets the specified icon.
 
@@ -28,4 +28,4 @@ Name | Type |
 ------ | ------ |
 `capability` | [CapabilityNames](../enums/capabilityapi.capabilitynames.md) \| [CapabilityIds](../enums/capabilityapi.capabilityids.md) |
 
-**Returns:** Promise\<[CapabilityResponse](capabilityapi.capabilityresponse.md)>
+**Returns:** Promise<[CapabilityResponse](capabilityapi.capabilityresponse.md)\>

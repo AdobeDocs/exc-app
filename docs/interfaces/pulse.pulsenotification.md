@@ -39,7 +39,7 @@ ___
 
 ### metadata
 
-• `Optional` **metadata**: Record\<string, string>
+• `Optional` **metadata**: Record<string, string\>
 
 A map of key value pairs which can be provided by publisher of notification for the consumer.
 
@@ -55,7 +55,7 @@ ___
 
 ### templateParams
 
-•  **templateParams**: Record\<string, any>
+•  **templateParams**: Record<string, any\>
 
 Templated parameters.
 

@@ -2,7 +2,7 @@
 
 > [Globals](../README.md) / [settings](../modules/settings.md) / Parameters
 
-# Interface: Parameters\<T>
+# Interface: Parameters<T\>
 
 The input parameters for the settings API.
 

@@ -24,9 +24,11 @@
 * [CUSTOMER\_JOURNEY\_ANALYTICS](appapi.appids.md#customer_journey_analytics)
 * [CUSTOMER\_JOURNEY\_MANAGEMENT](appapi.appids.md#customer_journey_management)
 * [DATA\_COLLECTION](appapi.appids.md#data_collection)
+* [DYNAMIC\_CHAT](appapi.appids.md#dynamic_chat)
 * [EXCHANGE](appapi.appids.md#exchange)
 * [EXPERIENCE\_CLOUD](appapi.appids.md#experience_cloud)
 * [EXPERIENCE\_MANAGER](appapi.appids.md#experience_manager)
+* [EXPERIENCE\_MANAGER\_AEMSHELL](appapi.appids.md#experience_manager_aemshell)
 * [EXPERIENCE\_MANAGER\_AEM\_MIGRATION](appapi.appids.md#experience_manager_aem_migration)
 * [EXPERIENCE\_MANAGER\_SCREENS](appapi.appids.md#experience_manager_screens)
 * [EXPERIENCE\_PLATFORM](appapi.appids.md#experience_platform)
@@ -150,6 +152,12 @@ ___
 
 ___
 
+### DYNAMIC\_CHAT
+
+•  **DYNAMIC\_CHAT**:  = "hummingbird"
+
+___
+
 ### EXCHANGE
 
 •  **EXCHANGE**:  = "exchange"
@@ -165,6 +173,12 @@ ___
 ### EXPERIENCE\_MANAGER
 
 •  **EXPERIENCE\_MANAGER**:  = "experienceManagerUI"
+
+___
+
+### EXPERIENCE\_MANAGER\_AEMSHELL
+
+•  **EXPERIENCE\_MANAGER\_AEMSHELL**:  = "aemshell"
 
 ___
 

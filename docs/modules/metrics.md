@@ -4,14 +4,45 @@
 
 # Module: metrics
 
-Copyright 2020 Adobe
-All Rights Reserved.
+API used to log messages, errors, events, metrics and analytics that get pushed to our telemetry
+system.
 
-NOTICE: Adobe permits you to use, modify, and distribute this file in
-accordance with the terms of the Adobe license agreement accompanying
-it. If you have received this file from a source other than Adobe,
-then your use, modification, or distribution of it requires the prior
-written permission of Adobe.
+The main goal of this project is to provide solutions that are integrating with Unified-Shell and
+running on Adobe Experience Cloud as much telemetry information as possible "for free" and a
+convenient integration option to collect custom, application specific metrics.
+
+***Import:***
+
+```typescript
+import metrics from '@adobe/exc-app/metrics';
+```
+
+***Type:***
+
+[MetricsApi](../interfaces/metrics.metricsapi.md#interface-metricsapi)
+
+***Usage:***
+
+```typescript
+import metrics from '@adobe/exc-app/metrics';
+
+class MyClass {
+  constructor() {
+    this.metrics = metrics.create('exc.landing-page.recents');
+  }
+
+  async someOperation() {
+    const timer = this.metrics.start('MyClass.someOperation');
+    try {
+      await performOperation();
+      timer.time('done');
+    } catch(err) {
+      this.metrics.error(error);
+      throw err;
+    }
+  }
+}
+```
 
 ## Index
 

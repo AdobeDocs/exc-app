@@ -13,13 +13,14 @@
 ### Methods
 
 * [fetch](network.networkapi.md#fetch)
+* [getApolloClient](network.networkapi.md#getapolloclient)
 * [query](network.networkapi.md#query)
 
 ## Methods
 
 ### fetch
 
-▸ **fetch**(`input`: RequestInfo, `init?`: [FetchInit](../modules/network.md#fetchinit)): Promise\<Response>
+▸ **fetch**(`input`: RequestInfo, `init?`: [FetchInit](../modules/network.md#fetchinit)): Promise<Response\>
 
 Provides an interface for fetching resources powered by the global 'fetch' API.
 
@@ -48,15 +49,47 @@ Name | Type | Description |
 `input` | RequestInfo | The resource that you wish to fetch. It can either be the URL of the resource you want to fetch or a Request object. |
 `init?` | [FetchInit](../modules/network.md#fetchinit) | An object containing any custom settings that you want to apply to the request. |
 
-**Returns:** Promise\<Response>
+**Returns:** Promise<Response\>
 
 The promise for the response to the fetch operation.
 
 ___
 
+### getApolloClient
+
+▸ **getApolloClient**(`options?`: [ApolloClientOptions](network.apolloclientoptions.md)): Promise<{ apolloClient: ApolloClient<InMemoryCache\> ; gql: *typeof* gql  }\>
+
+Provides an interface for querying resources via GraphqQL using ApolloClient
+***Example***
+```typescript
+ const apolloClientModule = await getApolloClient();
+ const apolloClient = apolloClientModule.apolloClient;
+ const gql = apolloClientModule.gql;
+ const result = await apolloClient.query({
+   query: gql`query  user {
+     id
+     name
+   }`,
+   variables : {}
+ });
+ console.log(result.data);
+```
+
+#### Parameters:
+
+Name | Type | Description |
+------ | ------ | ------ |
+`options?` | [ApolloClientOptions](network.apolloclientoptions.md) | Configuration to create ApolloClient instance  |
+
+**Returns:** Promise<{ apolloClient: ApolloClient<InMemoryCache\> ; gql: *typeof* gql  }\>
+
+GraphQL query response
+
+___
+
 ### query
 
-▸ **query**(`request`: [QueryRequest](network.queryrequest.md)): Promise\<Response>
+▸ **query**(`request`: [QueryRequest](network.queryrequest.md)): Promise<Response\>
 
 Provides an interface for querying resources via GraphqQL.
 In order to consume query, please make sure the respective query resolver is
@@ -94,6 +127,6 @@ Name | Type | Description |
 ------ | ------ | ------ |
 `request` | [QueryRequest](network.queryrequest.md) | Query request containing desired GQL Query. |
 
-**Returns:** Promise\<Response>
+**Returns:** Promise<Response\>
 
 The promise for the response to the query operation.

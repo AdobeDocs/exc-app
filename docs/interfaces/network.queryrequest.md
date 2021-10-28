@@ -14,18 +14,29 @@ Query request interface.
 
 ### Properties
 
+* [acceptLanguage](network.queryrequest.md#acceptlanguage)
 * [appId](network.queryrequest.md#appid)
 * [data](network.queryrequest.md#data)
-* [excludeSandbox](network.queryrequest.md#excludesandbox)
 * [maxRetries](network.queryrequest.md#maxretries)
 * [metadata](network.queryrequest.md#metadata)
 * [operationName](network.queryrequest.md#operationname)
 * [regionEnabled](network.queryrequest.md#regionenabled)
 * [routing](network.queryrequest.md#routing)
 * [scope](network.queryrequest.md#scope)
+* [statusCodesToRetry](network.queryrequest.md#statuscodestoretry)
 * [totalFetchTime](network.queryrequest.md#totalfetchtime)
 
 ## Properties
+
+### acceptLanguage
+
+• `Optional` **acceptLanguage**: undefined \| string
+
+Set the Accept-Language HTTP header in the request. Defaults to '*' (any language).
+
+See https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Accept-Language for more details.
+
+___
 
 ### appId
 
@@ -37,7 +48,7 @@ ___
 
 ### data
 
-•  **data**: [GraphQLQuery](network.graphqlquery.md) \| Array\<[GraphQLQuery](network.graphqlquery.md)>
+•  **data**: [GraphQLQuery](network.graphqlquery.md) \| Array<[GraphQLQuery](network.graphqlquery.md)\>
 
 Data containing single or multiple GQL queries.
 
@@ -58,14 +69,6 @@ Data containing single or multiple GQL queries.
  }
 };
 ```
-
-___
-
-### excludeSandbox
-
-• `Optional` **excludeSandbox**: undefined \| false \| true
-
-Whether or not to exclude sandbox headers.
 
 ___
 
@@ -120,6 +123,15 @@ ___
 • `Optional` **scope**: [FetchScope](../enums/network.fetchscope.md)
 
 Pass enum to set headers according to the requirements
+
+___
+
+### statusCodesToRetry
+
+• `Optional` **statusCodesToRetry**: number[]
+
+HTTP Status Codes which will prompt a retry. If not provided only network failures
+will prompt a retry.
 
 ___
 

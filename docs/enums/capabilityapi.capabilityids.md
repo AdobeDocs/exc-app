@@ -13,6 +13,7 @@
 * [ALERT](capabilityapi.capabilityids.md#alert)
 * [APPCONFIGURATIONS](capabilityapi.capabilityids.md#appconfigurations)
 * [APPLICATIONS](capabilityapi.capabilityids.md#applications)
+* [APPSURFACES](capabilityapi.capabilityids.md#appsurfaces)
 * [ASSETS](capabilityapi.capabilityids.md#assets)
 * [CLIENTPROPERTIES](capabilityapi.capabilityids.md#clientproperties)
 * [COMPONENTS](capabilityapi.capabilityids.md#components)
@@ -20,11 +21,13 @@
 * [DATAFLOW](capabilityapi.capabilityids.md#dataflow)
 * [DATASET](capabilityapi.capabilityids.md#dataset)
 * [DATASTREAMS](capabilityapi.capabilityids.md#datastreams)
+* [DATASTREAMSBETA](capabilityapi.capabilityids.md#datastreamsbeta)
 * [DESTINATION](capabilityapi.capabilityids.md#destination)
 * [HOME](capabilityapi.capabilityids.md#home)
 * [IDENTITIES](capabilityapi.capabilityids.md#identities)
 * [IDENTITY](capabilityapi.capabilityids.md#identity)
 * [JOURNEYS](capabilityapi.capabilityids.md#journeys)
+* [LANDINGPAGES](capabilityapi.capabilityids.md#landingpages)
 * [LICENSEUSAGE](capabilityapi.capabilityids.md#licenseusage)
 * [MESSAGES](capabilityapi.capabilityids.md#messages)
 * [MODEL](capabilityapi.capabilityids.md#model)
@@ -37,6 +40,7 @@
 * [PROFILE](capabilityapi.capabilityids.md#profile)
 * [QUERY](capabilityapi.capabilityids.md#query)
 * [REQUEST](capabilityapi.capabilityids.md#request)
+* [RULESPOLICIES](capabilityapi.capabilityids.md#rulespolicies)
 * [SANDBOX](capabilityapi.capabilityids.md#sandbox)
 * [SCHEMA](capabilityapi.capabilityids.md#schema)
 * [SEGMENT](capabilityapi.capabilityids.md#segment)
@@ -44,6 +48,7 @@
 * [SERVICE](capabilityapi.capabilityids.md#service)
 * [SETTINGS](capabilityapi.capabilityids.md#settings)
 * [SOURCE](capabilityapi.capabilityids.md#source)
+* [SUBSCRIPTIONS](capabilityapi.capabilityids.md#subscriptions)
 * [WORKFLOW](capabilityapi.capabilityids.md#workflow)
 
 ## Enumeration members
@@ -75,6 +80,12 @@ ___
 ### APPLICATIONS
 
 •  **APPLICATIONS**:  = "applications"
+
+___
+
+### APPSURFACES
+
+•  **APPSURFACES**:  = "appsurfaces"
 
 ___
 
@@ -120,6 +131,12 @@ ___
 
 ___
 
+### DATASTREAMSBETA
+
+•  **DATASTREAMSBETA**:  = "datastreamsbeta"
+
+___
+
 ### DESTINATION
 
 •  **DESTINATION**:  = "destination"
@@ -147,6 +164,12 @@ ___
 ### JOURNEYS
 
 •  **JOURNEYS**:  = "journeys"
+
+___
+
+### LANDINGPAGES
+
+•  **LANDINGPAGES**:  = "landingPages"
 
 ___
 
@@ -222,6 +245,12 @@ ___
 
 ___
 
+### RULESPOLICIES
+
+•  **RULESPOLICIES**:  = "rulesPolicies"
+
+___
+
 ### SANDBOX
 
 •  **SANDBOX**:  = "sandbox"
@@ -261,6 +290,12 @@ ___
 ### SOURCE
 
 •  **SOURCE**:  = "source"
+
+___
+
+### SUBSCRIPTIONS
+
+•  **SUBSCRIPTIONS**:  = "subscriptions"
 
 ___
 

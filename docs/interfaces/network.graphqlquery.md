@@ -49,7 +49,7 @@ ___
 
 ### variables
 
-• `Optional` **variables**: Record\<string, any>
+• `Optional` **variables**: Record<string, any\>
 
 Query specific variables- key value pairs.
 

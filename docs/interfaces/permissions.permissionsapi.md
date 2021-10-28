@@ -20,7 +20,7 @@ APIs to get permissions. An app in unified shell can consume PALM ACL service.
 
 ### get
 
-▸ **get**\<T>(`params`: [Parameters](permissions.parameters.md)): Promise\<[PermissionsResponse](permissions.permissionsresponse.md)\<T>>
+▸ **get**<T\>(`params`: [Parameters](permissions.parameters.md)): Promise<[PermissionsResponse](permissions.permissionsresponse.md)<T\>\>
 
 Gets permissions based on the specified parameters.
 
@@ -36,6 +36,6 @@ Name | Type | Description |
 ------ | ------ | ------ |
 `params` | [Parameters](permissions.parameters.md) | Parameters used to identify permissions to retrieve. |
 
-**Returns:** Promise\<[PermissionsResponse](permissions.permissionsresponse.md)\<T>>
+**Returns:** Promise<[PermissionsResponse](permissions.permissionsresponse.md)<T\>\>
 
 A promise for the specified permissions.

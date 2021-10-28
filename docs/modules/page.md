@@ -44,6 +44,7 @@ page.shellRedirect('/target');
 ### Interfaces
 
 * [BlockNavigationOptions](../interfaces/page.blocknavigationoptions.md)
+* [Callback](../interfaces/page.callback.md)
 * [ObjectWithHref](../interfaces/page.objectwithhref.md)
 * [ObjectWithPath](../interfaces/page.objectwithpath.md)
 * [PageApi](../interfaces/page.pageapi.md)

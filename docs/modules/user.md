@@ -91,3 +91,17 @@ type2e account will cause the imsProfile to change, while an org change within t
 * [Sandbox](../interfaces/user.sandbox.md)
 * [UserApi](../interfaces/user.userapi.md)
 * [UserInfo](../interfaces/user.userinfo.md)
+
+### Type aliases
+
+* [LogoutUrl](user.md#logouturl)
+
+## Type aliases
+
+### LogoutUrl
+
+Ƭ  **LogoutUrl**: string \| { distinctDomain?: undefined \| false \| true ; url: string  }
+
+Logout URL can either be a string or an object. The object includes the URL
+to be called on logout and whether this URL should be the only version of the
+host in the logout list.

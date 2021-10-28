@@ -24,11 +24,11 @@ rather cache and recycle them whenever possible.
 
 ### get
 
-▸ **get**(): Promise\<[Session](session.session-1.md)>
+▸ **get**(): Promise<[Session](session.session-1.md)\>
 
 Gets a stored session if one is available.
 
-**Returns:** Promise\<[Session](session.session-1.md)>
+**Returns:** Promise<[Session](session.session-1.md)\>
 
 Session object
 
@@ -36,7 +36,7 @@ ___
 
 ### invalidate
 
-▸ **invalidate**(`session`: [Session](session.session-1.md)): Promise\<void>
+▸ **invalidate**(`session`: [Session](session.session-1.md)): Promise<void\>
 
 Invalidates a session if its current.
 
@@ -46,13 +46,13 @@ Name | Type |
 ------ | ------ |
 `session` | [Session](session.session-1.md) |
 
-**Returns:** Promise\<void>
+**Returns:** Promise<void\>
 
 ___
 
 ### set
 
-▸ **set**(`session`: [Session](session.session-1.md)): Promise\<void>
+▸ **set**(`session`: [Session](session.session-1.md)): Promise<void\>
 
 Stores the current session
 
@@ -62,4 +62,4 @@ Name | Type |
 ------ | ------ |
 `session` | [Session](session.session-1.md) |
 
-**Returns:** Promise\<void>
+**Returns:** Promise<void\>
