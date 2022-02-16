@@ -19,6 +19,7 @@ script.
   - [Features](#features)
     - [APIs](#apis)
       - [AppApi](#appApi)
+      - [CacheApi](#cacheApi)
       - [CapabilityApi](#capabilityApi)
       - [HelpCenter](#helpcenter)
       - [Metrics](#metrics)
@@ -66,6 +67,10 @@ init(runtime => {
 #### AppApi
 APIs that provide access to certain data types nested inside the app Context.
 [learn more](/docs/modules/appapi.md)
+
+#### CacheApi
+API to cache information.
+[learn more](/docs/modules/cache.md)
 
 #### CapabilityApi
 API to request capability icons by id (or secondarily by display name).
