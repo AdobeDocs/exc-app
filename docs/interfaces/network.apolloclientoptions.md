@@ -15,6 +15,7 @@
 * [cacheOptions](network.apolloclientoptions.md#cacheoptions)
 * [connectToDevTools](network.apolloclientoptions.md#connecttodevtools)
 * [inputApolloLink](network.apolloclientoptions.md#inputapollolink)
+* [xql](network.apolloclientoptions.md#xql)
 
 ## Properties
 
@@ -33,3 +34,9 @@ ___
 ### inputApolloLink
 
 • `Optional` **inputApolloLink**: ApolloLink
+
+___
+
+### xql
+
+• `Optional` **xql**: undefined \| false \| true

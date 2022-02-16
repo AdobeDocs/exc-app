@@ -10,6 +10,8 @@ GQL Query containing graphql query and variables.
 
 * **GraphQLQuery**
 
+  ↳ [QueryDefinition](network.querydefinition.md)
+
 ## Index
 
 ### Properties

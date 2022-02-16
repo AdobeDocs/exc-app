@@ -14,6 +14,7 @@
 
 * [fetch](network.networkapi.md#fetch)
 * [getApolloClient](network.networkapi.md#getapolloclient)
+* [getPrefetched](network.networkapi.md#getprefetched)
 * [query](network.networkapi.md#query)
 
 ## Methods
@@ -84,6 +85,34 @@ Name | Type | Description |
 **Returns:** Promise<{ apolloClient: ApolloClient<InMemoryCache\> ; gql: *typeof* gql  }\>
 
 GraphQL query response
+
+___
+
+### getPrefetched
+
+▸ **getPrefetched**<T\>(`key`: string, `options?`: [PrefetchOptions](network.prefetchoptions.md)): Promise<[PrefetchResponse](../modules/network.md#prefetchresponse)<T\>\>
+
+Provides an interface for querying known data.
+Data querying and caching are managed in Unified Shell in advance.
+
+This is an experimental feature.
+
+#### Type parameters:
+
+Name |
+------ |
+`T` |
+
+#### Parameters:
+
+Name | Type | Description |
+------ | ------ | ------ |
+`key` | string | Data Contract key |
+`options?` | [PrefetchOptions](network.prefetchoptions.md) | Prefetch options |
+
+**Returns:** Promise<[PrefetchResponse](../modules/network.md#prefetchresponse)<T\>\>
+
+Promise for the contract execution response
 
 ___
 

@@ -22,6 +22,7 @@ Cloud.
 * [Runtime](../interfaces/root.runtime.md)
 * [RuntimeConfiguration](../interfaces/root.runtimeconfiguration.md)
 * [UserActivityEmitter](../interfaces/root.useractivityemitter.md)
+* [UserActivityMonitor](../interfaces/root.useractivitymonitor.md)
 
 ### Functions
 

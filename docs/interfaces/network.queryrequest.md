@@ -20,6 +20,7 @@ Query request interface.
 * [maxRetries](network.queryrequest.md#maxretries)
 * [metadata](network.queryrequest.md#metadata)
 * [operationName](network.queryrequest.md#operationname)
+* [preferredRegion](network.queryrequest.md#preferredregion)
 * [regionEnabled](network.queryrequest.md#regionenabled)
 * [routing](network.queryrequest.md#routing)
 * [scope](network.queryrequest.md#scope)
@@ -99,6 +100,14 @@ Query ID- To analyze a query's metrics & performance.
 ```typescript
 {operationName: 'BehanceAvatar'}
 ```
+
+___
+
+### preferredRegion
+
+• `Optional` **preferredRegion**: [GraphQLRegion](../modules/network.md#graphqlregion)
+
+Preferred region to send the GraphQL request to
 
 ___
 

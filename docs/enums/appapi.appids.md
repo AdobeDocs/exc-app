@@ -11,6 +11,7 @@
 * [ADMIN](appapi.appids.md#admin)
 * [ADMIN\_CONSOLE](appapi.appids.md#admin_console)
 * [ADOBE\_EXPERIENCE\_CLOUD\_GRIFFON](appapi.appids.md#adobe_experience_cloud_griffon)
+* [ADOBE\_EXPERIENCE\_PLATFORM](appapi.appids.md#adobe_experience_platform)
 * [ADVERTISING\_CLOUD](appapi.appids.md#advertising_cloud)
 * [ANALYTICS](appapi.appids.md#analytics)
 * [ASSETS](appapi.appids.md#assets)
@@ -42,13 +43,13 @@
 * [MARKETO\_ENGAGE](appapi.appids.md#marketo_engage)
 * [OFFERS](appapi.appids.md#offers)
 * [PEOPLE](appapi.appids.md#people)
+* [PERMISSIONS](appapi.appids.md#permissions)
 * [PLACES\_SERVICE](appapi.appids.md#places_service)
 * [PRIMETIME](appapi.appids.md#primetime)
 * [PRIVACY\_UI](appapi.appids.md#privacy_ui)
 * [PROJECT\_FIREFLY\_APPS](appapi.appids.md#project_firefly_apps)
 * [PROJECT\_HUMMINGBIRD](appapi.appids.md#project_hummingbird)
 * [PROJECT\_SIERRA](appapi.appids.md#project_sierra)
-* [REPORT\_SUITE\_MAPPING](appapi.appids.md#report_suite_mapping)
 * [SOFTWARE\_DISTRIBUTION](appapi.appids.md#software_distribution)
 * [SYSTEM\_STATUS](appapi.appids.md#system_status)
 * [TARGET](appapi.appids.md#target)
@@ -71,6 +72,12 @@ ___
 ### ADOBE\_EXPERIENCE\_CLOUD\_GRIFFON
 
 •  **ADOBE\_EXPERIENCE\_CLOUD\_GRIFFON**:  = "griffon"
+
+___
+
+### ADOBE\_EXPERIENCE\_PLATFORM
+
+•  **ADOBE\_EXPERIENCE\_PLATFORM**:  = "project-m"
 
 ___
 
@@ -260,6 +267,12 @@ ___
 
 ___
 
+### PERMISSIONS
+
+•  **PERMISSIONS**:  = "permissionsUI"
+
+___
+
 ### PLACES\_SERVICE
 
 •  **PLACES\_SERVICE**:  = "places"
@@ -293,12 +306,6 @@ ___
 ### PROJECT\_SIERRA
 
 •  **PROJECT\_SIERRA**:  = "cjm-home"
-
-___
-
-### REPORT\_SUITE\_MAPPING
-
-•  **REPORT\_SUITE\_MAPPING**:  = "reportSuiteMapping"
 
 ___
 

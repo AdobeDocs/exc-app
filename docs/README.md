@@ -9,6 +9,7 @@
 ### Modules
 
 * [appapi](modules/appapi.md)
+* [cache](modules/cache.md)
 * [capabilityapi](modules/capabilityapi.md)
 * [helpCenter](modules/helpcenter.md)
 * [ims](modules/ims.md)

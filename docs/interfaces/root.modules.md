@@ -13,6 +13,7 @@
 ### Properties
 
 * [appApi](root.modules.md#appapi)
+* [cache](root.modules.md#cache)
 * [capabilityApi](root.modules.md#capabilityapi)
 * [default](root.modules.md#default)
 * [helpCenter](root.modules.md#helpcenter)
@@ -39,6 +40,12 @@
 ### appApi
 
 • `Readonly` **appApi**: () => [AppApi](appapi.appapi-1.md)
+
+___
+
+### cache
+
+• `Readonly` **cache**: () => [CacheApi](cache.cacheapi.md)
 
 ___
 

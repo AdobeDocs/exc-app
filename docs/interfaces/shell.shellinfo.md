@@ -12,11 +12,18 @@
 
 ### Properties
 
+* [cdn](shell.shellinfo.md#cdn)
 * [environment](shell.shellinfo.md#environment)
 * [imsEnvironment](shell.shellinfo.md#imsenvironment)
 * [shellInfo](shell.shellinfo.md#shellinfo)
 
 ## Properties
+
+### cdn
+
+•  **cdn**: string
+
+___
 
 ### environment
 

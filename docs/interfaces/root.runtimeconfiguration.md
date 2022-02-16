@@ -19,7 +19,9 @@ External Runtime Configuration Interface
 * [appContainer](root.runtimeconfiguration.md#appcontainer)
 * [appId](root.runtimeconfiguration.md#appid)
 * [baseFrameUrl](root.runtimeconfiguration.md#baseframeurl)
+* [basePath](root.runtimeconfiguration.md#basepath)
 * [baseUrl](root.runtimeconfiguration.md#baseurl)
+* [cdn](root.runtimeconfiguration.md#cdn)
 * [changedProperties](root.runtimeconfiguration.md#changedproperties)
 * [discovery](root.runtimeconfiguration.md#discovery)
 * [environment](root.runtimeconfiguration.md#environment)
@@ -50,6 +52,7 @@ External Runtime Configuration Interface
 * [shellSideNavCollapsed](root.runtimeconfiguration.md#shellsidenavcollapsed)
 * [shellSideNavPresent](root.runtimeconfiguration.md#shellsidenavpresent)
 * [shellSideNavWidth](root.runtimeconfiguration.md#shellsidenavwidth)
+* [sourceEnvironment](root.runtimeconfiguration.md#sourceenvironment)
 * [spaAppId](root.runtimeconfiguration.md#spaappid)
 * [subOrg](root.runtimeconfiguration.md#suborg)
 * [tenant](root.runtimeconfiguration.md#tenant)
@@ -99,11 +102,27 @@ Solution iframe src url
 
 ___
 
+### basePath
+
+•  **basePath**: string
+
+Base path of the baseUrl property, without tenant or URL context.
+
+___
+
 ### baseUrl
 
 •  **baseUrl**: string
 
 Base URL
+
+___
+
+### cdn
+
+•  **cdn**: string
+
+Environment specific CDN string.
 
 ___
 
@@ -344,6 +363,14 @@ ___
 •  **shellSideNavWidth**: number
 
 Side Nav width
+
+___
+
+### sourceEnvironment
+
+•  **sourceEnvironment**: string
+
+Source environment
 
 ___
 

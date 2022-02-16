@@ -50,28 +50,38 @@ const queryResponse = await query({
 
 * [FetchScope](../enums/network.fetchscope.md)
 * [ROUTING](../enums/network.routing.md)
+* [StandardVariables](../enums/network.standardvariables.md)
 
 ### Interfaces
 
 * [ApolloClientOptions](../interfaces/network.apolloclientoptions.md)
+* [DataDedupConfig](../interfaces/network.datadedupconfig.md)
+* [DataPrefetchContract](../interfaces/network.dataprefetchcontract.md)
 * [DefaultMetaData](../interfaces/network.defaultmetadata.md)
+* [FetchCondition](../interfaces/network.fetchcondition.md)
 * [FetchOptions](../interfaces/network.fetchoptions.md)
 * [GraphQLQuery](../interfaces/network.graphqlquery.md)
 * [NetworkApi](../interfaces/network.networkapi.md)
+* [PrefetchOptions](../interfaces/network.prefetchoptions.md)
+* [QueryDefinition](../interfaces/network.querydefinition.md)
 * [QueryRequest](../interfaces/network.queryrequest.md)
 
 ### Type aliases
 
 * [FetchInit](network.md#fetchinit)
+* [GraphQLRegion](network.md#graphqlregion)
+* [PrefetchResponse](network.md#prefetchresponse)
 
 ### Variables
 
 * [DEFAULT\_STATUS\_CODES\_TO\_RETRY](network.md#default_status_codes_to_retry)
+* [FRESH\_MS](network.md#fresh_ms)
 
 ### Functions
 
 * [fetch](network.md#fetch)
 * [getApolloClient](network.md#getapolloclient)
+* [getPrefetched](network.md#getprefetched)
 * [query](network.md#query)
 
 ## Type aliases
@@ -89,6 +99,24 @@ also additionally specify the 'auth' parameter to automatically set the Authenti
 `{auth: 'Header', method: 'GET'}` or
 `{method: 'GET'}`
 
+___
+
+### GraphQLRegion
+
+Ƭ  **GraphQLRegion**: \"va7\" \| \"aus5\" \| \"nld2\"
+
+___
+
+### PrefetchResponse
+
+Ƭ  **PrefetchResponse**<T\>: [CacheEntry](cache.md#cacheentry)<T\> & { getFresh?: undefined \| () => Promise<[PrefetchResponse](network.md#prefetchresponse)<T\>\>  }
+
+#### Type parameters:
+
+Name |
+------ |
+`T` |
+
 ## Variables
 
 ### DEFAULT\_STATUS\_CODES\_TO\_RETRY
@@ -96,6 +124,12 @@ also additionally specify the 'auth' parameter to automatically set the Authenti
 • `Const` **DEFAULT\_STATUS\_CODES\_TO\_RETRY**: number[] = [429, 502, 503, 504]
 
 Default status codes which imply a transient error and can be retried.
+
+___
+
+### FRESH\_MS
+
+• `Const` **FRESH\_MS**: number = 60 * 1000
 
 ## Functions
 
@@ -165,6 +199,34 @@ Name | Type | Description |
 **Returns:** Promise<{ apolloClient: ApolloClient<InMemoryCache\> ; gql: *typeof* gql  }\>
 
 GraphQL query response
+
+___
+
+### getPrefetched
+
+▸ **getPrefetched**<T\>(`key`: string, `options?`: [PrefetchOptions](../interfaces/network.prefetchoptions.md)): Promise<[PrefetchResponse](network.md#prefetchresponse)<T\>\>
+
+Provides an interface for querying known data.
+Data querying and caching are managed in Unified Shell in advance.
+
+This is an experimental feature.
+
+#### Type parameters:
+
+Name |
+------ |
+`T` |
+
+#### Parameters:
+
+Name | Type | Description |
+------ | ------ | ------ |
+`key` | string | Data Contract key |
+`options?` | [PrefetchOptions](../interfaces/network.prefetchoptions.md) | Prefetch options |
+
+**Returns:** Promise<[PrefetchResponse](network.md#prefetchresponse)<T\>\>
+
+Promise for the contract execution response
 
 ___
 

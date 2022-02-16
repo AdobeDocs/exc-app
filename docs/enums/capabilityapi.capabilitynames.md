@@ -15,8 +15,10 @@
 * [APPLICATIONS](capabilityapi.capabilitynames.md#applications)
 * [APPSURFACES](capabilityapi.capabilitynames.md#appsurfaces)
 * [ASSETS](capabilityapi.capabilitynames.md#assets)
+* [CAMPAIGNS](capabilityapi.capabilitynames.md#campaigns)
 * [CLIENTPROPERTIES](capabilityapi.capabilitynames.md#clientproperties)
 * [COMPONENTS](capabilityapi.capabilitynames.md#components)
+* [CONTROLRULES](capabilityapi.capabilitynames.md#controlrules)
 * [DASHBOARD](capabilityapi.capabilitynames.md#dashboard)
 * [DATAFLOW](capabilityapi.capabilitynames.md#dataflow)
 * [DATASET](capabilityapi.capabilitynames.md#dataset)
@@ -40,7 +42,6 @@
 * [PROFILE](capabilityapi.capabilitynames.md#profile)
 * [QUERY](capabilityapi.capabilitynames.md#query)
 * [REQUEST](capabilityapi.capabilitynames.md#request)
-* [RULESPOLICIES](capabilityapi.capabilitynames.md#rulespolicies)
 * [SANDBOX](capabilityapi.capabilitynames.md#sandbox)
 * [SCHEMA](capabilityapi.capabilitynames.md#schema)
 * [SEGMENT](capabilityapi.capabilitynames.md#segment)
@@ -49,6 +50,7 @@
 * [SETTINGS](capabilityapi.capabilitynames.md#settings)
 * [SOURCE](capabilityapi.capabilitynames.md#source)
 * [SUBSCRIPTIONS](capabilityapi.capabilitynames.md#subscriptions)
+* [UNIFIEDTAGS](capabilityapi.capabilitynames.md#unifiedtags)
 * [WORKFLOW](capabilityapi.capabilitynames.md#workflow)
 
 ## Enumeration members
@@ -95,6 +97,12 @@ ___
 
 ___
 
+### CAMPAIGNS
+
+•  **CAMPAIGNS**:  = "Campaigns"
+
+___
+
 ### CLIENTPROPERTIES
 
 •  **CLIENTPROPERTIES**:  = "Tags"
@@ -104,6 +112,12 @@ ___
 ### COMPONENTS
 
 •  **COMPONENTS**:  = "Components"
+
+___
+
+### CONTROLRULES
+
+•  **CONTROLRULES**:  = "Rules"
 
 ___
 
@@ -245,12 +259,6 @@ ___
 
 ___
 
-### RULESPOLICIES
-
-•  **RULESPOLICIES**:  = "Rules & policies"
-
-___
-
 ### SANDBOX
 
 •  **SANDBOX**:  = "Sandboxes"
@@ -296,6 +304,12 @@ ___
 ### SUBSCRIPTIONS
 
 •  **SUBSCRIPTIONS**:  = "Subscription list"
+
+___
+
+### UNIFIEDTAGS
+
+•  **UNIFIEDTAGS**:  = "UnifiedTags"
 
 ___
 
