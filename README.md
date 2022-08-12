@@ -130,7 +130,7 @@ an IMS user and/or an IMS org level. An app in unified shell can consume Setting
 #### Shell
 
 APIs to request shell-specific information such as environment, imsEnvironment, and shellInfo.
-[learn more](/docs/modules/settings.md)
+[learn more](/docs/modules/shell.md)
 
 #### TopBar
 
